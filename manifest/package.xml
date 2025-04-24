@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+     <!-- Apex Classes -->
+    <types>
+        <members>APIRestConnection</members>
+        <members>CallOutHelper</members>
+        <members>APIRestInput</members>
+        <members>APIRestOutput</members>
+        <members>CountryLayerUpdate_Batch</members>
+        <members>ITrigger</members>
+        <members>TriggerFactory</members>
+        <members>LeadTriggerHandler</members>
+        <members>LeadGateway</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Apex Trigger -->
+    <types>
+        <members>LeadTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <!-- Validation Rule -->
+    <types>
+        <members>*</members>
+        <name>ValidationRule</name>
+    </types>
+
+    <!-- Custom Metadata Type and Fields -->
+    <types>
+        <members>Integration_Setting__mdt.Active__c</members>
+        <members>Integration_Setting__mdt.Certificate__c</members>
+        <members>Integration_Setting__mdt.Client_Id__c</members>
+        <members>Integration_Setting__mdt.Client_Secret__c</members>
+        <members>Integration_Setting__mdt.Description__c</members>
+        <members>Integration_Setting__mdt.EndPoint__c</members>
+        <members>Integration_Setting__mdt.Named_Credential_API__c</members>
+        <members>Integration_Setting__mdt.TimeOut__c</members>
+        <members>Integration_Setting__mdt.Token__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Integration_Setting__mdt</members>
+        <name>CustomMetadata</name>
+    </types>
+
+    <!-- Permission Set -->
+    <types>
+        <members>integration</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- Custom Object: Country_Layer__c and its fields -->
+    <types>
+        <members>Country_Layer__c.Alpha2Code__c</members>
+        <members>Country_Layer__c.Alpha3Code__c</members>
+        <members>Country_Layer__c.Capital__c</members>
+        <members>Country_Layer__c.Name</members>
+        <members>Country_Layer__c.Region__c</members>
+        <members>Country_Layer__c.RegionalBlocs__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Country_Layer__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>NamedCredential</name>
+    </types>
+
+    <types>
+    <members>*</members>
+    <name>ExternalCredential</name>
+</types>
+    
+     <types>
+        <members>*</members>
+        <name>FlowDefinition</name>
+    </types>
+
+    <!-- Custom Field on Lead -->
+    <types>
+        <members>Lead.Country_Code__c</members>
+         <members>Lead.Owner_since__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>63.0</version>
+</Package>

@@ -125,10 +125,7 @@ public Without Sharing class CallOutHelper {
         HttpRequest request = new HttpRequest(); 
         try 
         {
-            //eci_application_id
-            if (String.isNotBlank(header.eciApplicationId)) {
-                request.setHeader('eci_application_id', header.eciApplicationId);
-            }
+            
             //Content type
             request.setHeader('Content-Type', header.contentType);
             //Accept type
@@ -211,8 +208,7 @@ public Without Sharing class CallOutHelper {
     }
 
     public class genericHeader {
-        //eci_application_id
-        public String eciApplicationId;
+     
         //Http method
         public String httpMethod;
         //Authorization type

@@ -23,20 +23,8 @@ global class CountryLayerUpdate_Batch implements Database.Batchable<sObject> {
             if (existingMap != null && existingMap.containskey(apiCountry.alpha3Code)) {
                 Country_Layer__c local = existingMap.get(apiCountry.alpha3Code);
 
-                // Generar string regional blocs
                 String blocs = '';
                 
-                /*
-                String blocs = '';
-                if (apiCountry.regionalBlocs != null && !apiCountry.regionalBlocs.isEmpty()) {
-                    List<String> acronyms = new List<String>();
-                    for (CountryService.RegionalBloc rb : apiCountry.regionalBlocs) {
-                        acronyms.add(rb.acronym);
-                    }
-                    blocs = String.join(acronyms, '');
-                }*/
-
-                // Comprobar si ha cambiado
                 if (
                     local.Name != apiCountry.name ||
                     local.Alpha2Code__c != apiCountry.alpha2Code ||
